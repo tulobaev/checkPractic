@@ -27,7 +27,7 @@ function ListProduct() {
                   component="img"
                   alt="user image"
                   image={item.image}
-                  sx={{ objectFit: "cover" }}
+                  sx={{ objectFit: "cover", height: "200px" }}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
@@ -55,10 +55,7 @@ function ListProduct() {
           ) : (
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "80vh",
+                margin: "0 auto",
               }}
             >
               <CircularProgress />
